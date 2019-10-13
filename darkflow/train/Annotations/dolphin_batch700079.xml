@@ -1,0 +1,26 @@
+<annotation>
+	<folder>Images</folder>
+	<filename>dolphin_batch700079.jpg</filename>
+	<path>/home/dan/darkflow/train/Images/dolphin_batch700079.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>4096</width>
+		<height>2160</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>dolphin</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>2762</xmin>
+			<ymin>72</ymin>
+			<xmax>2844</xmax>
+			<ymax>176</ymax>
+		</bndbox>
+	</object>
+</annotation>

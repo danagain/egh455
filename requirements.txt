@@ -1,0 +1,3 @@
+pip install opencv-python --user
+pip install requests --user
+pip install shutil --user

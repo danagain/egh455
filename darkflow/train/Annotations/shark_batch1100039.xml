@@ -1,0 +1,26 @@
+<annotation>
+	<folder>images</folder>
+	<filename>shark_batch1100039.jpg</filename>
+	<path>/home/mitch/Desktop/shark/images/shark_batch1100039.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>3840</width>
+		<height>2160</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>shark</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>2138</xmin>
+			<ymin>685</ymin>
+			<xmax>2382</xmax>
+			<ymax>1136</ymax>
+		</bndbox>
+	</object>
+</annotation>
