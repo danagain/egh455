@@ -2,3 +2,4 @@ pip install opencv-python --user
 pip install requests --user
 pip install shutil --user
 pip install tensorflow==1.14.0 --user 
+pip install matplotlib --user

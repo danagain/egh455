@@ -86,6 +86,8 @@ class Import(object):
             parent=self.canvas, initialdir='C:/Tutorial',
             title='Import a Video',
             filetypes=[('mp4 video', '.mp4'),
+                        ('avi video', '.avi'),
+                        ('All video', '*.*'),
                        ('png images', '.png')])
         if not videoPath:
             return

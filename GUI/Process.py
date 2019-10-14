@@ -11,7 +11,7 @@ class Process(object):
 
     def __init__(self, canvas, dataStructure, VideoAnalyzer, statusMessage):
         self.dataStructure = dataStructure;
-        self.DLM = ttk.Combobox(canvas, width=34, values=[ "YOLOv3", "Group 1",])
+        self.DLM = ttk.Combobox(canvas, width=15, values=[ "YOLOv3", "SSD",])
         self.statusMessage = statusMessage
         self.processIcon = PhotoImage(file = project_root + "/iconsBlue/process.png")
         self.processButton = tkinter.Button(canvas, text ="Process Video",  image = self.processIcon, bg = "white", bd = 0, highlightthickness = 0, command = self.processVideo)
@@ -78,8 +78,9 @@ class Process(object):
 
         # add processed CSV
         with open(res['csvpath']) as csvfile:
+            print("csv path : " + res['csvpath'])
             readCSV = csv.reader(csvfile, delimiter=',')
-            list = []
+            arr = []
 
             check = True
             for row in readCSV:
@@ -94,6 +95,8 @@ class Process(object):
                     return
 
         #######################################
-                list.append(row[1])
+                arr.append(row[1])
 
-            #self.dataStructure.setHasCSV(videoIndex, list)
+            index = self.dataStructure.getIndex(res['videopath'])
+            print("index = " + str(index))
+            self.dataStructure.setHasCSV(index, arr)

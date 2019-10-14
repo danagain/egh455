@@ -111,6 +111,9 @@ class DataStructure:
         self.update = boolean
 
     
+    def getIndex(self, path):
+        return self.videoPath.index(path)
+        
     def playVideo(self, selection):
         self.CurrentVideo = selection
         self.update = True
@@ -121,6 +124,7 @@ class DataStructure:
 
 
 
+        
 
 
 

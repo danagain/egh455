@@ -5,7 +5,7 @@ import AnimalTotals
 class UpdateStatistics:
     def __init__(self, animalTotalFrame, videoStatFrame, dataStructure):
         columnHeader = ("ID", "Object", "C.I", "Xmin", "Ymin", "Xmax", "Ymax")
-        columnWidths = (25, 60, 40, 40, 40, 40, 40)
+        columnWidths = (25, 60, 50, 40, 40, 40, 40)
         self.videoStatisticTable = StatisticsDisplayWidget.ListSelection(columnHeader, columnWidths, videoStatFrame, height = 10)
         self.animalTotals = AnimalTotals.AnimalTotals(animalTotalFrame)
         self.dataStructure = dataStructure

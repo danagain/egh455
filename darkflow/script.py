@@ -87,13 +87,13 @@ def predict(videoPath):
         img_array.append(img)
 
     print(len(img_array))
-    out = cv2.VideoWriter(os.getcwd() + "/yolo.avi" ,cv2.VideoWriter_fourcc(*'DIVX'), 15, size)
+    out = cv2.VideoWriter(os.getcwd() + "/" +  videoPath.split("/")[-1].split(".")[0]  +  "-yolo.avi" ,cv2.VideoWriter_fourcc(*'DIVX'), 15, size)
 
     for i in range(len(img_array)):
         out.write(img_array[i])
 
     out.release()
-    return json.dumps({'csvpath': os.getcwd() + "/yolo.csv", 'videopath': os.getcwd() + "/yolo.avi"})
+    return json.dumps({'csvpath': os.getcwd() + "/yolo.csv", 'videopath': os.getcwd() + "/" +  videoPath.split("/")[-1].split(".")[0] +  "-yolo.avi"})
 
 
     # plt.imshow(img)
