@@ -7,8 +7,10 @@ import os
 import sys
 import time
 import json
+sys.path.append(os.path.abspath(os.getcwd() + "/darkflow/darkflow/net/build.py"))
+print(os.path.abspath(os.getcwd() + "/darkflow/darkflow/net/build.py"))
+# from darkflow.net.build import TFNet
 
-from darkflow.net.build import TFNet
 sys.path.append("./darkflow/")
 
 # define the model options and run
