@@ -7,12 +7,11 @@ import os
 import sys
 import time
 import json
-sys.path.append(os.path.abspath(os.getcwd() + "/darkflow/darkflow/net/build.py"))
-print(os.path.abspath(os.getcwd() + "/darkflow/darkflow/net/build.py"))
-# from darkflow.net.build import TFNet
+# sys.path.append("./darkflow/")
+
 
 sys.path.append("./darkflow/")
-
+from darkflow.darkflow.net.build import TFNet
 # define the model options and run
 def predict(videoPath):
 
@@ -24,7 +23,7 @@ def predict(videoPath):
         writer.writerow([ 'FrameNumber', 'PredictionString'])
         writeFile.close()
 
-    options = {"model": "cfg/455.cfg", "load": 25000, "threshold": 0.4}
+    options = {"model": "cfg/455.cfg", "load": 35250, "threshold": 0.4}
     frameNum = 0
     tfnet = TFNet(options)
 

@@ -6,7 +6,7 @@ import shutil
 from flask import request
 from common import *
 sys.path.append("./darkflow/")
-from script import *
+from script import predict
 
 
 app = Flask(__name__)
